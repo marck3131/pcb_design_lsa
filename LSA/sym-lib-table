@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name "FRC_IDC headers")(type Legacy)(uri "${KIPRJMOD}/FRC_IDC headers.lib")(options "")(descr ""))
+  (lib (name conn_02x05_odd_even)(type Legacy)(uri ${KIPRJMOD}/conn_02x05_odd_even.lib)(options "")(descr ""))
+)

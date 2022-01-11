@@ -1,0 +1,73 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "LSA"
+Date "2022-01-05"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 "MARCK"
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 8750 5800 2    50   Input ~ 0
+04
+Text GLabel 8750 5900 2    50   Input ~ 0
+03
+Text GLabel 8750 6000 2    50   Input ~ 0
+02
+Text GLabel 8750 6100 2    50   Input ~ 0
+01
+Wire Wire Line
+	8550 5800 8750 5800
+Wire Wire Line
+	8550 5900 8750 5900
+Wire Wire Line
+	8750 6000 8550 6000
+Wire Wire Line
+	8550 6100 8750 6100
+$Comp
+L power:VCC #PWR?
+U 1 1 61D7E855
+P 7850 6000
+F 0 "#PWR?" H 7850 5850 50  0001 C CNN
+F 1 "VCC" H 7800 6150 50  0000 L CNN
+F 2 "" H 7850 6000 50  0001 C CNN
+F 3 "" H 7850 6000 50  0001 C CNN
+	1    7850 6000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7850 6000 8050 6000
+$Comp
+L power:GND #PWR?
+U 1 1 61D804A6
+P 7850 6150
+F 0 "#PWR?" H 7850 5900 50  0001 C CNN
+F 1 "GND" H 7950 6000 50  0000 R CNN
+F 2 "" H 7850 6150 50  0001 C CNN
+F 3 "" H 7850 6150 50  0001 C CNN
+	1    7850 6150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7850 6150 8000 6150
+Wire Wire Line
+	8000 6150 8000 6100
+Wire Wire Line
+	8000 6100 8050 6100
+$Comp
+L conn_02x05_odd_even:Conn_02x05_Odd_Even J1
+U 1 1 61D7A023
+P 8350 5900
+F 0 "J1" H 8350 6403 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 8350 6312 50  0000 C CNN
+F 2 "" H 8350 5900 50  0001 C CNN
+F 3 "~" H 8350 5900 50  0001 C CNN
+	1    8350 5900
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
